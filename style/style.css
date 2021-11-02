@@ -1,0 +1,237 @@
+/* general Style */
+:root {
+    --MainOrange: rgb(238, 174, 70);
+    --white: #ffffff;
+    --lineColor:#8b2626
+}
+a{
+    text-decoration: none;
+    font-family:monospace ;
+}
+.p__font{
+    font-family: cursive;
+}
+.bgClor{
+    background-color: #99c0e0;
+}
+.bgClor2{
+    background-color: #EEE2DC;
+}
+.p__clr{
+    color: #123C69;
+}
+  
+.head__line:after,.second__line:after {
+	content: '';
+	display: block;
+	width: 5%;
+    margin: 1rem 0;
+	height: 2px;
+	background-color:var(--lineColor) ;
+    transition: width .5s;
+}
+.second__line::after{
+    margin: 1rem auto;
+}
+.headAnimate:hover .second__line::after {
+	width: 20%;
+    border-radius: 0 5px 5px 0;
+}
+.headAnimate:hover .head__line::after {
+	width: 10%;
+    border-radius: 0 5px 5px 0;
+}
+.header__style h2{
+    font-family: 'Titillium Web', sans-serif;
+    /* font-size: 2.4rem; */
+    font-weight:300;
+}
+.body__style h3{
+    font-family: 'Titillium Web', sans-serif;
+}
+.body__style ul span{
+ color:rgb(54, 54, 54);
+ font-weight: 600;
+}
+
+.body__style ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+   }
+   
+/* start nav */
+.navbar-custom {
+    background-color: rgb(47, 47, 47);
+}
+.navbar-collapse{
+    flex-direction: row-reverse;
+}
+.main__nav .nav-item .nav-link{
+    color:var(--MainOrange)
+}
+/* end nav */
+
+/* start header */
+.main__header{
+    background-color: #2a405c;    
+    color:var(--MainOrange)
+}
+.portfolio__btn{
+    background-color: #99c0e0;
+    display: inline-block;
+    min-width: 30%;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: monospace;
+    transition: 1s;
+}
+.portfolio__btn:hover{
+    background-color: #4f88b6;
+    font-weight: 700;
+    border-radius: 1.5rem; 
+}
+/*  */
+.main__header .container{
+min-height: 60vh;
+}
+.main__header__describe h4{
+    font-family:  'Titillium Web', sans-serif;
+}
+.main__header__describe h2{
+    font-size: 3rem;
+    /* width: 75%; */
+    font-family: 'Titillium Web', sans-serif; 
+}
+@media (min-width: 769px) {
+    .textWriteAnimate h4{
+        overflow: hidden;
+        border-right: .15rem solid rgb(238, 174, 70);
+        white-space: nowrap;
+        margin: 0 auto; 
+        letter-spacing: .1rem;
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(238, 174, 70); }
+      }
+  }
+
+/* End Header */
+
+/* start skills */
+.skills__body ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: rgb(29, 20, 68);
+    gap: 10px;
+    flex-basis:20%;
+    min-width: 200px;
+}
+/* end skills */
+/* portfolio index */
+.describe .shadow{
+    
+    /* position: absolute; */
+    opacity: 50%;
+    font-size: 3rem;
+    /* transition: 2s; */
+}
+.describe .shadow .animate1{
+    font-size: 8rem;
+    animation: rotateSpan 3s infinite alternate;
+}
+.describe .shadow .animate2{
+   margin-left: -20px;
+   animation: pumb 3s infinite alternate;
+}
+    @keyframes rotateSpan {
+        0% {
+            
+        }
+        100% {
+            transform: rotate(360deg) scale(1.2) translate(0px,20px);
+        }
+    }
+  @keyframes pumb {
+    0% {
+        transform: translate(0px,-30px);
+    }
+    100% {
+        transform: translate(27px,50px);
+    }
+  }
+.project__link,.project__link2{
+    background-color: #FF5151;
+    color: white;
+    padding: 1rem 1rem;
+    display: inline-block;
+    border-radius: 2rem 0px 0px 2rem ;
+    transition: 0.5s;
+    font-weight: 700;
+}
+.project__link2{
+    padding: 0.5rem 1rem;
+    border-radius: 0px 2rem 2rem 0px;
+    background-color: rgb(0, 0, 0);
+}
+.project__link2:hover{
+    background-color: rgb(54, 54, 54);
+    padding-left: 3rem;
+    color: rgb(177, 177, 177);
+}
+.project__link:hover{
+    color: rgb(204, 204, 204);
+    background-color: #c82e2e;
+}
+.header__bg__clr{
+    background-image: linear-gradient(to bottom, #1b262c, #232f35, #2b383e, #334147, #3c4a51);
+    color: #ffffff;
+}
+.body__bg__clr{
+    background-image: linear-gradient(to top, #000000, #111010, #1b1b1a, #252524, #2f2f2e);
+}
+.card__bg__clr{
+    background-color: #3c4a51;
+}
+.card__bg__clr2{
+    background-color: #1b262c;
+}
+.card__style{
+    border-radius: 0rem 2rem 2rem 2rem;
+    color: rgb(255, 255, 255);
+    min-height: 300px;
+}
+/*  */
+.projects header h2{
+    color: white;
+}
+.project__card{
+    position: relative;
+    
+    /* z-index: 2; */
+}
+.project__card:hover .card__header{
+    top: -10px;
+    opacity: 1;
+}
+.project__card .card__header{
+    transition: 2s;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 30px;
+    padding: 5px 10px;
+    left: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 5px 5px 5px 0px;
+}
