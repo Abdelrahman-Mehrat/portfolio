@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Titillium+Web:wght@300;400;600;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style/all.min.css">
     <link rel="stylesheet" href="style/style.css">
 
@@ -47,7 +48,7 @@
                         <h4 class=" text-uppercase ">My name is Abdelrahman Nashat</h4>
                     </div>
                     <h2 class="mb-4">I'm a Front-End web developer</h2>
-                    <a href="portfolio.html" class=" portfolio__btn btn text-uppercase">my portfolio</a>
+                    <a href="portfolio.html" class=" portfolio__btn btn text-uppercase"><i class="fas fa-fingerprint"></i> my portfolio</a>
                 </div>
                 
             </div>
@@ -57,7 +58,8 @@
         </div>
     </header>
     <!-- end Header -->
-    <section class="info bgClor headAnimate py-4 ">
+    <!-- start about -->
+    <section  class="info bgClor headAnimate py-4 " data-aos="fade-left">
         <div class="container ">
             <header class="info__header header__style">
                 <h2 class="head__line"><i class="far fa-address-card fa-2x"></i> About</h2>
@@ -73,10 +75,12 @@
         </div>
 
     </section>
-    <section class="education  p__clr bgClor2 headAnimate py-4">
+    <!-- end about -->
+    <!-- starat education and courses -->
+    <section  class="education  p__clr bgClor2 headAnimate py-4" data-aos="fade-left">
         <div class="container">
-            <header class="education__header header__style">
-                <h2 class="head__line "> <i class="fas fa-university fa-2x"></i> Courses & Education</h2>
+            <header class="text-wrapper education__header header__style">
+                <h2 class="head__line text__base text-animation"> <i class="fas fa-university fa-2x"></i> Courses & Education</h2>
             </header>
             <div class="education__body body__style">
                 <div>
@@ -102,11 +106,12 @@
             </div>
         </div>
     </section>
+    <!-- end education and courses -->
     <!-- start skills -->
-    <section class="skills  p__clr bgClor headAnimate py-4">
+    <section  class=" skills  p__clr bgClor headAnimate py-4" data-aos="fade-right">
         <div class="container">
-            <header class="skills__header header__style">
-                <h2 class="head__line"><i class="fas fa-chalkboard fa-2x"></i> Skills</h2>
+            <header class=" skills__header header__style">
+                <h2 class="head__line "><i class="fas fa-chalkboard fa-2x"></i> Skills</h2>
             </header>
             <div class="skills__body body__style">
                 <ul class="list-unstyled d-flex flex-wrap ">
@@ -151,8 +156,7 @@
                     </li>
                     <li>
                         <i class="fas fa-2x fa-paint-brush"></i><span>Photoshop</span>
-                    </li>
-                    
+                    </li>            
                 </ul>
             </div>
         </div>
@@ -160,7 +164,7 @@
     </section>
     <!-- end skills -->
     <!-- start language -->
-    <section class="other bgClor2  py-4 p__clr">
+    <section class="other bgClor2  py-4 p__clr" data-aos="fade-right" >
         <div class="container">
             <div class="row">
                 <div class="language col-sm-6 headAnimate">
@@ -191,8 +195,14 @@
         </div>
     </section>
     <!-- End language -->
+    <!-- bootstrap -->
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- aos animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

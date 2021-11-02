@@ -1,251 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;900&display=swap');
-    </style>
-    <link rel="stylesheet" href="style/all.min.css" />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
 
-  <body>
-    <nav class="main__nav navbar navbar-custom navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Abdelrahman</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="portfolio.html">Portfolio</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="style/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/all.min.css" />
+  <!-- google font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;900&display=swap');
+  </style>
+  <!-- main style -->
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+  <!-- start navbar -->
+  <nav class="main__nav navbar navbar-custom navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Abdelrahman</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <!-- start intro -->
+  <section class="headAnimate  position-relative describe  header__bg__clr py-4">
+    <div class="container">
+      <header class="describe__head header__style">
+        <h2 class="head__line">Hello</h2>
+      </header>
+      <div class="describe__body typewriter row fs-5">
+        <p class="col-md-6">"Front End Developer ,I enjoy spending my free time increasing my knowledge of Web
+          Development and building new and challenging projects. In addition,
+          I developed several responsive websites.I am a fast learner and love facing challenges . "
+        </p>
+        <div class="shadow col-md-6 text-center">
+          <p class="d-inline-block animate1">P</p>
+          <p class="d-inline-block animate2">ortfolio</p>
         </div>
       </div>
-    </nav>
-    <!-- end navbar -->
-    <!-- start intro -->
-    <section class="headAnimate  position-relative describe  header__bg__clr py-4">
-        <div class="container">
-          <header class="describe__head header__style">
-            <h2 class="head__line">Hello</h2>
-          </header>
-          <div class="describe__body typewriter row fs-5">
-              <p class="col-md-6">"Front End Developer ,I enjoy spending my free time increasing my knowledge of Web Development and building new and challenging projects. In addition, 
-                I developed several responsive websites.I am a fast learner and love facing challenges . "            
-              </p>
-            <div class="shadow col-md-6 text-center">
-                <p class="d-inline-block animate1">P</p>
-                <p class="d-inline-block animate2">ortfolio</p>
-            </div>
-
-            </div>
+    </div>
+  </section>
+  <!-- end intro -->
+  <!-- start skill cards -->
+  <section class="headAnimate skill__cards header__bg__clr py-5">
+    <div class="container">
+      <header class="text-center header__style pb-4">
+        <h2 class="second__line">What i can do</h2>
+      </header>
+      <div class="skill__cards__body row">
+        <div class="col-sm-4 p-3">
+          <div class="skill__cards__wrapper  text-center py-4 ">
+            <i class="far mb-3 fa-object-group fa-3x"></i>
+            <h3>responsive websites</h3>
+          </div>
         </div>
-      </section>
-    <!-- end intro -->
-    <!-- start skill cards -->
-    <section class="headAnimate skill__cards header__bg__clr py-5">
-      <div class="container">
-        <header class="text-center header__style pb-4">
-          <h2 class="second__line">What i can do</h2>
+        <div class="col-sm-4 p-3">
+          <div class="skill__cards__wrapper  text-center py-4 ">
+            <i class="fab mb-3 fa-sketch fa-3x"></i>
+            <h3>Creative Thinking</h3>
+
+          </div>
+        </div>
+        <div class="col-sm-4 p-3">
+          <div class="skill__cards__wrapper  text-center py-4 ">
+            <i class="fas mb-3 fa-laptop-code fa-3x"></i>
+            <h3>Animation</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end skill cards -->
+  <!-- start projects -->
+  <main class="projects body__bg__clr py-5">
+    <div class="container">
+      <div class="row">
+        <header class="pb-5 text-center headAnimate header__style">
+          <h2 class="second__line">some projects</h2>
+          <p class="text-white">you can check GitHub repo for some templates and tasks</p>
+          <p class="text-white d-flex justify-content-center align-items-center gap-3">Orange link direct to Hosting
+            Server <i class="far fa-grin-beam text-info"></i></p>
         </header>
-        <div class="skill__cards__body row">
-          <div class="col-sm-4 p-3">
-            <div class="skill__cards__wrapper  text-center py-4 ">
-              <i class="far mb-3 fa-object-group fa-3x"></i>
-              <h3>responsive websites</h3>
+        <div class="project__card mb-4 col-md-6 p-4">
+          <div class="p-3 inner__card card__style card__bg__clr2">
+            <h3 class="card__header">bootstrap5</h3>
+            <div class="">
+              <ul class="list-unstyled p__font">
+                <li class="mb-3">
+                  i have been using component from bootstrap and make custom
+                  style with SCSS
+                </li>
+                <li class="mb-3">responsive website</li>
+                <li class="mb-3">
+                  using: HTML5 / SCSS / bootstrap5 / Google-fonts / Font
+                  awesome
+                </li>
+                <li class="mb-3 d-flex align-items-center ">
+                  <a class="project__link" href="https://gifted-mehrat.netlify.app/" target="_blank">Project link</a>
+                  <a class="project__link2" href="https://github.com/Abdelrahman-Mehrat/bootstrap5.git"
+                    target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-sm-4 p-3">
-            <div class="skill__cards__wrapper  text-center py-4 ">
-              <i class="fab mb-3 fa-sketch fa-3x"></i>
-              <h3>Creative</h3>
-              
+        </div>
+
+        <div class="project__card mb-4 col-md-6 p-4">
+          <div class="p-3 card__style card__bg__clr">
+            <h3 class="card__header">React</h3>
+            <div class="">
+              <ul class="list-unstyled p__font">
+                <li class="mb-3">try to set what i learn with react</li>
+                <li class="mb-3">creating function and class components</li>
+                <li class="mb-3">
+                  using: HTML5 / CSS3 / bootstrap5 / Google-fonts / Font
+                  awesome / hooks
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <a class="project__link2" href="https://github.com/Abdelrahman-Mehrat/React-test-project"
+                    target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-sm-4 p-3">
-            <div class="skill__cards__wrapper  text-center py-4 ">
-              <i class="fas mb-3 fa-laptop-code fa-3x"></i>
-              <h3>Animation</h3>
+        </div>
+
+        <div class="project__card mb-4 col-md-6 p-4">
+          <div class="p-3 card__style card__bg__clr">
+            <h3 class="card__header">SCSS</h3>
+            <div class="">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  template using SCSS with some features >> mixins - variables
+                  - placeholders - Extend
+                </li>
+                <li class="mb-3">responsive website with flexbox</li>
+                <li class="mb-3">using: HTML5 / SCSS</li>
+                <li class="mb-3 d-flex align-items-center">
+                  <a class="project__link" href="https://scss-template.netlify.app/" target="_blank">Project link</a>
+                  <a class="project__link2" href="https://github.com/Abdelrahman-Mehrat/sass-project.git"
+                    target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__card mb-4 col-md-6 p-4">
+          <div class="p-3 card__style card__bg__clr2">
+            <h3 class="card__header">HTML5 CSS3</h3>
+            <div class="">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  template using pure HTML&CSS
+                </li>
+                <li class="mb-3">responsive website with flexbox</li>
+                <li class="mb-3">using: HTML5 / CSS3</li>
+                <li class="mb-3 d-flex align-items-center">
+                  <a class="project__link" href="https://css3-template.netlify.app/" target="_blank">Project link</a>
+                  <a class="project__link2" href="https://github.com/Abdelrahman-Mehrat/HTML5--CSS3.git"
+                    target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__card mb-4 col-md-6 p-4">
+          <div class="p-3 card__style card__bg__clr2">
+            <h3 class="card__header">Memory Game</h3>
+            <div class="">
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  it is a game that you try to match cards together
+                </li>
+                <li class="mb-3">basically was trying to use what i learnt from javascript</li>
+                <li class="mb-3 d-flex align-items-center">
+                  <a class="project__link" href="https://magic-card-game.netlify.app/" target="_blank">Project link</a>
+                  <a class="project__link2" href="https://github.com/Abdelrahman-Mehrat/memory-cards.git"
+                    target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end skill cards -->
-    <!-- start projects -->
-    <main class="projects body__bg__clr py-5">
-      <div class="container">
-        <div class="row">
-            <header class="pb-5 text-center headAnimate header__style">
-                <h2 class="second__line">some projects</h2>
-                <p class="text-white">you can check GitHub repo for some templates and tasks</p>
-                <p class="text-white d-flex justify-content-center align-items-center gap-3">Orange link direct to Hosting Server <i class="far fa-grin-beam text-info"></i></p>
-            </header>
-          <div class="project__card mb-4 col-md-6 p-4">
-            <div class="p-3 inner__card card__style card__bg__clr2">
-              <h3 class="card__header">bootstrap5</h3>
-              <div class="">
-                <ul class="list-unstyled p__font">
-                  <li class="mb-3">
-                    i have been using component from bootstrap and make custom
-                    style with SCSS
-                  </li>
-                  <li class="mb-3">responsive website</li>
-                  <li class="mb-3">
-                    using: HTML5 / SCSS / bootstrap5 / Google-fonts / Font
-                    awesome
-                  </li>
-                  <li class="mb-3 d-flex align-items-center ">
-                    <a
-                      class="project__link"
-                      href="https://gifted-mehrat.netlify.app/"
-                      target="_blank"
-                      >Project link</a
-                    >
-                    <a
-                      class="project__link2"
-                      href="https://github.com/Abdelrahman-Mehrat/bootstrap5.git"
-                      target="_blank"
-                      ><i class="fab fa-2x fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    </div>
+  </main>
+  <!-- bootstrap -->
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 
-          <div class="project__card mb-4 col-md-6 p-4">
-            <div class="p-3 card__style card__bg__clr">
-              <h3 class="card__header">React</h3>
-              <div class="">
-                <ul class="list-unstyled p__font">
-                  <li class="mb-3">try to set what i learn with react</li>
-                  <li class="mb-3">creating function and class components</li>
-                  <li class="mb-3">
-                    using: HTML5 / CSS3 / bootstrap5 / Google-fonts / Font
-                    awesome / hooks
-                  </li>
-                  <li class="mb-3 d-flex align-items-center">
-                    <a
-                      class="project__link2"
-                      href="https://github.com/Abdelrahman-Mehrat/React-test-project"
-                      target="_blank"
-                      ><i class="fab fa-2x fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project__card mb-4 col-md-6 p-4">
-            <div class="p-3 card__style card__bg__clr">
-              <h3 class="card__header">SCSS</h3>
-              <div class="">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    template using SCSS with some features >> mixins - variables
-                    - placeholders - Extend
-                  </li>
-                  <li class="mb-3">responsive website with flexbox</li>
-                  <li class="mb-3">using: HTML5 / SCSS</li>
-                  <li class="mb-3 d-flex align-items-center">
-                    <a
-                      class="project__link"
-                      href="https://scss-template.netlify.app/"
-                      target="_blank"
-                      >Project link</a
-                    >
-                    <a
-                      class="project__link2"
-                      href="https://github.com/Abdelrahman-Mehrat/sass-project.git"
-                      target="_blank"
-                      ><i class="fab fa-2x fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project__card mb-4 col-md-6 p-4">
-            <div class="p-3 card__style card__bg__clr2">
-              <h3 class="card__header">HTML5 CSS3</h3>
-              <div class="">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    template using pure HTML&CSS
-                  </li>
-                  <li class="mb-3">responsive website with flexbox</li>
-                  <li class="mb-3">using: HTML5 / CSS3</li>
-                  <li class="mb-3 d-flex align-items-center">
-                    <a
-                      class="project__link"
-                      href="https://css3-template.netlify.app/"
-                      target="_blank"
-                      >Project link</a
-                    >
-                    <a
-                      class="project__link2"
-                      href="https://github.com/Abdelrahman-Mehrat/HTML5--CSS3.git"
-                      target="_blank"
-                      ><i class="fab fa-2x fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project__card mb-4 col-md-6 p-4">
-            <div class="p-3 card__style card__bg__clr2">
-              <h3 class="card__header">Memory Game</h3>
-              <div class="">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    it is a game that you try to match cards together  
-                  </li>
-                  <li class="mb-3">basically was trying to use what i learnt from javascript</li>
-                  <li class="mb-3 d-flex align-items-center">
-                    <a
-                      class="project__link"
-                      href="https://magic-card-game.netlify.app/"
-                      target="_blank"
-                      >Project link</a
-                    >
-                    <a
-                      class="project__link2"
-                      href="https://github.com/Abdelrahman-Mehrat/memory-cards.git"
-                      target="_blank"
-                      ><i class="fab fa-2x fa-github"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="js/all.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
