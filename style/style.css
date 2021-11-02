@@ -269,7 +269,6 @@ a {
 }
 .project__card {
   position: relative;
-
 }
 .project__card:hover .card__style {
   box-shadow: 11px 10px 30px -2px rgba(255, 255, 255, 0.45);
@@ -281,8 +280,8 @@ a {
 .project__card .card__header {
   transition: 2s;
   position: absolute;
-  opacity: 0;
-  top: 30px;
+  opacity: 0.1;
+  top: 5px;
   padding: 5px 10px;
   left: 25px;
   background-color: white;
@@ -318,6 +317,10 @@ a {
   gap: 5px;
   color: rgb(29, 20, 68);
   flex-basis: 50%;
+}
+.project__card .card__header {
+  top: -10px;
+  opacity: 1;
 }
 
 }
