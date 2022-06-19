@@ -130,9 +130,26 @@ a {
 .intro-sec{
 min-height: 30vh;
 }
+.intro-sec .intro-sec-left{
+  display: flex;
+  align-items: center;
+  min-height: 30vh
+}
 .intro-sec h1 span{
   color: #d24351;
 }
+.intro-sec .download-btn{
+  border: 1px solid #d24351;
+display: inline-block;
+padding: 5px 7px;
+border-radius: 5px;
+transition: 0.4s;
+color: white;
+}
+.intro-sec .download-btn:hover{
+  background-color: #d243512f;
+  color: white;
+  }
 .skill__cards__wrapper {
   border-radius: 2rem 2rem 2rem 0rem;
   border: 3px solid #f0e3ca;
