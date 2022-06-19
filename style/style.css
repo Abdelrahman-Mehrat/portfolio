@@ -14,15 +14,8 @@ a {
 .p__font {
   font-family: Cairo;
 }
-p {
-  font-family: Cairo;
-}
-.bgClor {
-  background-color: #99c0e0;
-}
-.bgClor2 {
-  background-color: #eee2dc;
-}
+
+
 .p__clr {
   color: #123c69;
 }
@@ -105,58 +98,12 @@ p {
 .main__header .container {
   min-height: 80vh;
 }
-.main__header__describe h4 {
-  
-}
+
 .main__header__describe h2 {
   font-size: 3rem;
-
 }
 /* header text animation */
-@media (min-width: 769px) {
-  .textWriteAnimate h4 {
-    overflow: hidden;
-    border-right: 0.15rem solid rgb(238, 174, 70);
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 0.1rem;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(238, 174, 70);
-    }
-  }
-}
-.portfolio__btn {
-  background-color: rgb(51, 51, 51);
-  border: 1px solid #99c0e0;
-  color: #99c0e0;
-  display: inline-block;
-  min-width: 30%;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  font-family: monospace;
-  transition: 1s;
-}
-.portfolio__btn:hover {
-  background-color: #4f88b6;
-  font-weight: 700;
-  /* border-radius: 1.5rem; */
-}
+
 /* End Header */
 .info__body {
   display: flex;
@@ -180,22 +127,26 @@ p {
 /* end index page */
 
 /* portfolio page */
+.intro-sec{
+min-height: 30vh;
+}
+.intro-sec h1 span{
+  color: #d24351;
+}
 .skill__cards__wrapper {
   border-radius: 2rem 2rem 2rem 0rem;
   border: 3px solid #f0e3ca;
 }
 .skill__cards__wrapper:hover svg {
-  transform: scale(1.4) rotate(20deg);
+  transform: scale(1.2) rotate(20deg);
 }
 .skill__cards__wrapper h3 {
-  border-radius: 2rem 2rem 2rem 0rem;
-  font-family: "Titillium Web", sans-serif;
   font-weight: 300;
   color: #f0e3ca;
 }
 .skill__cards__wrapper svg {
   color: #ff8303;
-  transition: 1s;
+  transition: 0.5s;
 }
 /* end skills */
 /* start describe cards */

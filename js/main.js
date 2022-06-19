@@ -27,7 +27,7 @@ const cardData =  {
       {
         "id" :2,
         "title" : "a2m-medical",
-        "githubPages": "https://abdelrahman-mehrat.github.io/restaurant/",
+        "githubPages": "https://www.a2m-medical.com/contactus",
         "cardImg" : "a2m.jpg"
 
       },  {
@@ -72,7 +72,7 @@ cardData.data.forEach(details => {
         <img class="w-100" src="assets/imgs/cardimgs/${details.cardImg}" alt="">
         </div>
           <li class="mb-3 mt-2 d-flex align-items-center justify-content-center">
-            <a class="${details.repo != undefined ?`project__link` : `project__link3` }  " href="${details.githubPages}" target="_blank">Project link</a>
+            <a class="${details.repo != undefined ?`project__link` : `project__link3` }  " href="${details.githubPages}" target="_blank">Visit Webpage</a>
             ${details.repo != undefined    ? `<a class="project__link2" href="${details.repo}"
             target="_blank"><i class="fab fa-2x fa-github"></i></a>` : ""  }
           </li>
